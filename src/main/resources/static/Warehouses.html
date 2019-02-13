@@ -5,13 +5,16 @@
 	<title>Warehouse Directory</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="Warehouse.css" />
+	<link rel="shortcut icon" type= image/ico href="box.ico">
+	
 </head>
 <body>
 
 <h1>Warehouse Directory</h1>
-	<nav><a href="http://localhost:9595/index.html"> <button> Home</button></a></nav>
+	<nav><a href="http://localhost:9595/index.html"> <button id="home"> Home</button></a></nav>
+	
     
-    <h2>Operations</h2>
+    <h3>Operations</h3>
     <div id="menuDiv">
    <select name="operation" id="dropMenu">
         <option id="allW" value="All Warehouses" >Warehouses</option>
@@ -29,7 +32,8 @@
 	</tr>
 </table>
 <div id="halos">
-<h2>Assets</h2>
+<h2 id="asset">Assets</h2>
+<hr>
 <b>Average</b>
 <p id="avg"></p>
 

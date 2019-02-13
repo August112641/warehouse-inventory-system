@@ -71,11 +71,17 @@ function addNewRow(id, name, price, quantity, warehouse){
     document.getElementById("product").appendChild(row);
 
 	}
+
+function refreshPage(){
+	   window.location.reload();
+	} 
 function postSuccess(){
-	alert("Product Generated Successfully, Please Refresh Page")	}
+	alert("Product Generated Successfully, Page Will Refresh")	}
 
 document.getElementById("selcButt").addEventListener("click",postRequest);
 document.getElementById("selcButt").addEventListener("click",postSuccess);
+document.getElementById("selcButt").addEventListener("click",refreshPage);
+
 
 //Delete Button
 function deleteRequest(url, callback){
@@ -120,10 +126,16 @@ function deleteRequest(url, callback){
 
     xhr.send(jsonObj);
 }
+
+function refreshPage(){
+	   window.location.reload();
+	} 
 function deleteSuccess(){
-	alert("Product Deleted Successfully, Please Refresh Page")	}
+	alert("Product Deleted Successfully, Page Will Refresh")	}
 document.getElementById("delButt").addEventListener("click",deleteRequest);
 document.getElementById("delButt").addEventListener("click",deleteSuccess);
+document.getElementById("delButt").addEventListener("click",refreshPage);
+
 
 
 //Put Button
@@ -169,9 +181,15 @@ function putRequest(url, callback){
 
     xhr.send(jsonObj);
 }
+
+function refreshPage(){
+	   window.location.reload();
+	} 
+
 function putSuccess(){
-	alert("Product Updated Successfully, Please Refresh Page")	}
+	alert("Product Updated Successfully, Page Wil Refresh")	}
+
 document.getElementById("putButt").addEventListener("click",putRequest);
 document.getElementById("putButt").addEventListener("click",putSuccess);
-
-    document.getElementById("putButt").addEventListener("click",putRequest);
+document.getElementById("putButt").addEventListener("click",putRequest);
+document.getElementById("putButt").addEventListener("click",refreshPage);

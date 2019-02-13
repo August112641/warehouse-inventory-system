@@ -1,13 +1,15 @@
+*{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 h1{
     text-align: center;
     color: black;
     background-color: white;
-    width: fit-content;
-    margin-right: auto;
+    width: fit-content
+;    margin-right: auto;
     margin-left: auto;
     font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    }
 #product{
 	width: 300px;
 	height:300px;
@@ -18,8 +20,6 @@ h1{
 	margin-top:100px;
 	margin-bottom:auto;
     float: left;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     }
 #warehouse{
 	width: 300px;
@@ -31,8 +31,6 @@ h1{
 	margin-top: 100px;
 	margin-bottom:auto;
     float: right;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
     }
 
 h2{
@@ -43,36 +41,25 @@ h2{
     margin-right: auto;
     margin-left: auto;
     font-size: 45px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 #ope{
     margin-top: 15%;
     text-align: center;
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    color: black;    
 }
 
 #choi{
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+    text-align: center;  
 }
 nav{
-	text-align: center;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	
+	text-align: center;	
 }
 body{
     background-image: url("https://www.goodfreephotos.com/albums/united-states/kentucky/other-kentucky/barrels-of-whiskey-in-storage-room.jpg");
-    background-size: cover;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    background-size: cover;}
 select{
     font-size: 25px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

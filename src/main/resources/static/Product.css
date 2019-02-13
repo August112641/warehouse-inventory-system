@@ -1,3 +1,6 @@
+*{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 body{
 	background-image: url(https://media.giphy.com/media/11LK0CKzYtkaic/giphy.gif);
 	 background-attachment:fixed;
@@ -8,19 +11,15 @@ table{
     margin-right: auto;
     margin-left: 15%;
     float: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    margin-bottom: 10%;
+    }
 th, tr, td{
    text-align: center;
-    border: 5px red;
     background-color: whitesmoke;
-    padding: 5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    padding: 5px;    
 }
 
 form{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align:center;
 	width: fit-content;
     margin-right: auto;
@@ -32,8 +31,7 @@ form{
 	text-align: center;
 	background-color: whitesmoke;
     width: fit-content;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    opacity:.9;
 	}
 	
 h1{
@@ -44,8 +42,6 @@ h1{
     margin-right: auto;
     margin-left: auto;
     font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 h2{
 	text-align: center;
@@ -55,8 +51,6 @@ h2{
     margin-right: auto;
     margin-left: auto;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 h3{
 text-align: center;
@@ -65,21 +59,21 @@ text-align: center;
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    font-size: 35px;	
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    opacity: .8;
 }
 #choi{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
 }
 nav{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+}
+#home{
+	font-size:20px;
+	width: fit-content;
+	heigth: 200px
+	
 }

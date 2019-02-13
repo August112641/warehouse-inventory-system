@@ -1,3 +1,10 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#asset{
+	background-color: none;
+}
 h1{
     text-align: center;
     color: black;
@@ -6,16 +13,12 @@ h1{
     margin-right: auto;
     margin-left: auto;
     font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    }
 th, tr, td{
    text-align: center;
-    border: 5px red;
     background-color: whitesmoke;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-}
+    }
 
 #halos{
 	background-color: whitesmoke;
@@ -25,8 +28,8 @@ th, tr, td{
     float:left;
     margin-left: 10%;
     margin-right: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+        opacity:.9;
+    
 }
 
 table{
@@ -34,8 +37,7 @@ table{
     margin-left: auto;
     margin-right: 25%;
     float: right;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    margin-bottom: 10%;
 }
 body{
 	background-image:url(https://media.giphy.com/media/xTiTnHRfIsVvebf2tW/giphy.gif);
@@ -45,24 +47,36 @@ nav{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 h2{
 	text-align: center;
-    color: black;
     background-color: white;
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
     font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    opacity: .8;
+    
+}
+h3{
+	text-align: center;
+	background-color: white;
+	width: fit-content;
+	margin-right: auto;
+    margin-left: auto;
+        opacity:.8;
+    
+	
 }
 #menuDiv{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+#home{
+	font-size:20px;
+	width: fit-content;
+	heigth: 200px
+	
 }

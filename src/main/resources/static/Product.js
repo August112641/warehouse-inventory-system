@@ -41,7 +41,7 @@ function addRow(id, name, price, quantity, warehouse){
 	
 	cell1.innerHTML= id;
 	cell2.innerHTML= name;
-	cell3.innerHTML= price;
+	cell3.innerHTML= "$"+(Math.round((price) *100)/100);
 	cell4.innerHTML= quantity;
 	cell5.innerHTML= warehouse;
 	
