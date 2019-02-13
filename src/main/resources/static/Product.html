@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Product Inventory</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="Product.css" />
+</head>
+<body>
+<h1>Product Inventory</h1>
+	
+<nav><a href="http://localhost:9595/index.html"> <button> Home</button></a></nav>
+
+<div id = "choi">
+    
+    <h2 id ="ope">Operations</h2>
+   
+  <select name="Operation:" id="dropMenu">       
+        <option id="allP" value="All Products">Products</option>
+        <option id="allW" value="All Warehouses">Warehouses</option>
+    </select>
+    </div>
+    <br>
+    	<h3>Products</h3>
+	<form id=newPro>
+		<h3>Product Management</h3>
+	 	<h4>Product Id:</h4>
+        <input type="number" id="productId"/>
+	 	<h4>Product Name:</h4>
+        <input type="text" id="productName"/>
+        <h4>Product Price per/1:</h4>
+        <input type="number" id="productPrice" />
+        <h4>Product Quantity:</h4>
+        <input type="number" id="productQuantity"/>
+        <h4>Warehouse Id:</h4>
+        <input type="number" id ="warehouseId"/>
+                <br>
+   <button id="selcButt"type = "button">Submit</button>
+   <button id="delButt"type = "button">Delete</button>
+      <button id="putButt"type = "button">Update</button>
+   
+</form>
+
+<table id="product">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Warehouse</th>
+	</tr>
+</table>
+	<br>
+
+<script src="Product.js"></script>
+ <script src="ProductRequests.js"></script>
+</body>
+</html>

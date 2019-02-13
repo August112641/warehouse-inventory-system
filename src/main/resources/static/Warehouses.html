@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Warehouse Directory</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="Warehouse.css" />
+</head>
+<body>
+
+<h1>Warehouse Directory</h1>
+	<nav><a href="http://localhost:9595/index.html"> <button> Home</button></a></nav>
+    
+    <h2>Operations</h2>
+    <div id="menuDiv">
+   <select name="operation" id="dropMenu">
+        <option id="allW" value="All Warehouses" >Warehouses</option>
+        <option id="allP" value="All Products" >Products</option>
+    </select>
+    <br>
+</div>
+
+<table id="Warehouses">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Address</th>
+	
+	</tr>
+</table>
+<div id="halos">
+<h2>Assets</h2>
+<b>Average</b>
+<p id="avg"></p>
+
+
+<b>Max</b>
+<p id="max"></p>
+
+
+
+<b>Median</b>
+<p id="median"></p>
+
+
+
+<b>Minimum</b>
+<p id="min"></p>
+<br>
+
+
+<b>Sum</b>
+<p id="sum"></p>
+</div>
+
+
+<script src="Warehouses.js"></script>
+<script src="OperationsRequests.js"></script>
+</body>
+</html>

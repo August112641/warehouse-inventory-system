@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 50px;
+}
+th, tr, td{
+   text-align: center;
+    border: 5px red;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+#halos{
+	background-color: whitesmoke;
+	width: fit-content;
+	margin-right: auto;
+    margin-left: auto;
+    float:left;
+    margin-left: 10%;
+    margin-right: auto%;
+}
+
+table{
+	 width: fit-content;
+    margin-left: auto;
+    margin-right: 25%;
+    float: right;
+}
+body{
+	background-image:url(https://media.giphy.com/media/xTiTnHRfIsVvebf2tW/giphy.gif);
+	background-attachment: fixed;
+}
+nav{
+	text-align: center;
+	margin-right: auto;
+    margin-left: auto;
+}
+h2{
+	text-align: center;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 40px;
+}
+#menuDiv{
+	text-align: center;
+	margin-right: auto;
+    margin-left: auto;
+}

@@ -10,11 +10,12 @@ import com.revature.spark.beans.Warehouse;
  * Within this class, you will implement the logic to calculate data for various
  * reports.
  * 
- * @author Your Name Here
+ * @author 
  * 
  */
 public class AssociateImplementation {
-
+	
+	
 	/**
 	 * Find the sum of all product assets. Remember that quantity times price is the
 	 * total value for a given product.
@@ -23,9 +24,13 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double sum(List<Product> products) {
-		return null;
+		double result = 0.0;
+      for(Product i : products) { 
+          result = result + (i.getPrice() * i.getQuantity());
+         
+      }
+	return result;
 	}
-
 	/**
 	 * Find the lowest product price out of all products.
 	 * 
@@ -33,7 +38,13 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double min(List<Product> products) {
-		return null;
+		double min=100.0;
+		for(Product i : products) {
+			if(min >= i.getPrice()) {
+				min=i.getPrice();
+			}
+		}
+		return min;
 	}
 
 	/**
@@ -43,8 +54,15 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double max(List<Product> products) {
-		return null;
+		double max=0.0;
+		for(Product i : products) {
+			if(max <= i.getPrice()) {
+				max=i.getPrice();
+			}
+		}
+		return max;
 	}
+	
 
 	/**
 	 * Find the average product price of all products.
@@ -53,7 +71,13 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double avg(List<Product> products) {
-		return null;
+		double sum = 0.0;
+		double avg=0.0;
+		for(Product i: products) {
+			sum= sum + i.getPrice();
+			avg= sum/products.size();
+		}
+		return avg;
 	}
 
 	/**
@@ -63,6 +87,34 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double median(List<Product> products) {
+			double[] arrProduct = new double [products.size()];
+			System.out.println(arrProduct);
+			
+			for(int i =0; i < products.size(); i++) {
+				arrProduct[i] = products.get(i).getPrice();
+			}
+		
+			//sort
+			for(int i = 0; i < arrProduct.length-1; i++) {
+				for(int j = 0; j < arrProduct.length-1; i++) {
+					if(arrProduct[i] < arrProduct[j]) {
+						double val =arrProduct[j];
+						arrProduct[j]=arrProduct[i];
+						arrProduct[i]= val;
+					}
+				}
+			}		
+		
+		double median=0.0;
+		double middle;
+			if(arrProduct[arrProduct.length] % 2 ==0) {
+				middle =(arrProduct[arrProduct.length]%2 + arrProduct[arrProduct.length]%2-1)/2;
+				median=median + middle;
+			}
+			else {
+				middle =(arrProduct[arrProduct.length]%2);
+				median=median + middle;
+			}
 		return null;
 	}
 
