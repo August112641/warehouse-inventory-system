@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.assertj.core.util.Arrays;
+import org.junit.AfterClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -160,6 +162,7 @@ public class AssociateImplementationTest {
 	}
 
 	@Test
+	@Ignore
 	public void totalAssetsPerWarehouseTest() {
 		Map<Warehouse, Double> testTotal = testObj.totalAssetsPerWarehouse(productList);
 		try {
@@ -171,6 +174,11 @@ public class AssociateImplementationTest {
 			e.printStackTrace();
 			fail("An exception was thrown during this test - therefore the test was failed");
 		}
+	}
+	
+	@AfterClass
+	public static void after() {
+		System.out.println("completed");
 	}
 
 }

@@ -41,25 +41,25 @@ function printResponse1(xhrobj){
 maxRequest(url1, printResponse1);
 
 //Median
-//let url2 ="http://localhost:9595/product/median";
-//function medianRequest(url, callback){
-//    let xhr = new XMLHttpRequest();
-//    xhr.open("GET", url);
-//    xhr.onreadystatechange = function(){
-//        if(xhr.readyState === 4 && xhr.status === 200){
-//            callback(this);
-//        }
-//    }
-//    xhr.send();
-//}
-//  
-//function printResponse2(xhrobj){
-//    let xresponse = xhrobj.response;
-//    let median= JSON.parse(xresponse);
-//    document.getElementById("median").innerHTML= median;
-//}
-//
-//medianRequest(url2, printResponse2);
+let url2 ="http://localhost:9595/product/median";
+function medianRequest(url, callback){
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4 && xhr.status === 200){
+            callback(this);
+        }
+    }
+    xhr.send();
+}
+  
+function printResponse2(xhrobj){
+    let xresponse = xhrobj.response;
+    let median= JSON.parse(xresponse);
+    document.getElementById("median").innerHTML= median;
+}
+
+medianRequest(url2, printResponse2);
 
 //Minimum
 let url3 ="http://localhost:9595/product/min";

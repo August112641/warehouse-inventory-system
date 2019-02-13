@@ -87,8 +87,8 @@ public class AssociateImplementation {
 	 * @return
 	 */
 	public Double median(List<Product> products) {
-			double[] arrProduct = new double [products.size()];
-			System.out.println(arrProduct);
+		
+			double[] arrProduct = new double[products.size()];
 			
 			for(int i =0; i < products.size(); i++) {
 				arrProduct[i] = products.get(i).getPrice();
@@ -96,27 +96,25 @@ public class AssociateImplementation {
 		
 			//sort
 			for(int i = 0; i < arrProduct.length-1; i++) {
-				for(int j = 0; j < arrProduct.length-1; i++) {
-					if(arrProduct[i] < arrProduct[j]) {
+				for(int j = 0; j < arrProduct.length-1-i; j++) {
+					if(arrProduct[j+1] < arrProduct[j]) {
 						double val =arrProduct[j];
-						arrProduct[j]=arrProduct[i];
-						arrProduct[i]= val;
+						arrProduct[j]=arrProduct[j+1];
+						arrProduct[j+1]= val;
 					}
 				}
-			}		
-		
-		double median=0.0;
-		double middle;
-			if(arrProduct[arrProduct.length] % 2 ==0) {
-				middle =(arrProduct[arrProduct.length]%2 + arrProduct[arrProduct.length]%2-1)/2;
-				median=median + middle;
+			}
+			double median;
+			if(products.size()%2 ==0) {
+				median= ((arrProduct[products.size()/2])+(arrProduct[products.size()/2-1]))/2;
 			}
 			else {
-				middle =(arrProduct[arrProduct.length]%2);
-				median=median + middle;
+				median=(arrProduct[products.size()/2]);
 			}
-		return null;
+			return median;
 	}
+			
+	
 
 	/**
 	 * !! BONUS CHALLENGE REQUIREMENT !!
