@@ -8,15 +8,19 @@ table{
     margin-right: auto;
     margin-left: 15%;
     float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 th, tr, td{
    text-align: center;
     border: 5px red;
     background-color: whitesmoke;
     padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align:center;
 	width: fit-content;
     margin-right: auto;
@@ -27,7 +31,9 @@ form{
 #newPro{
 	text-align: center;
 	background-color: whitesmoke;
-	width: fit-content;
+    width: fit-content;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 	}
 	
 h1{
@@ -38,6 +44,8 @@ h1{
     margin-right: auto;
     margin-left: auto;
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 h2{
 	text-align: center;
@@ -47,6 +55,8 @@ h2{
     margin-right: auto;
     margin-left: auto;
     font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 h3{
 text-align: center;
@@ -56,14 +66,20 @@ text-align: center;
     margin-right: auto;
     margin-left: auto;
     font-size: 35px;	
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 #choi{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 nav{
 	text-align: center;
 	margin-right: auto;
     margin-left: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
